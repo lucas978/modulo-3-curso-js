@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   js04_upperlower.html</title>
+</head>
+
+<html>
+ <h3>valor variavel </h3>
+ <p>
+ 
+  <body>
+   <form  method="post" name="formz">
+        digite seu curso: <input type="text" name="cursoname" id="">
+        <button name="btnvalida" onclick="cadcurso()">Validar</button>
+        <button type="reset">Cancelar</button>
+        <input type="text" name="codcurso">
+
+    </form>
+
+  
+    <script>
+        function cadcurso(){
+            var cursodig = document.formz.cursoname.value;
+            if(cursodig.toUpperCase() = 'SIST'){
+                document.formz.codcurso.value = 'valido';
+            }
+            else{
+                document.formz.codcurso.value = 'invalido';
+            }
+        }
+    </script>
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js04_calen - somatoria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+
+<body>
+
+
+<h3>Meses calendario</h3>
+
+    <form name="formcal" method="post">
+        digite o mes <input type="text" maxlength="2" name="mes" id="mes"><p></p>
+        <button onclick="verificames()" >Processar</button>
+        <button type="reset">Cancelar</button>
+        <input type="text" name="" id="nome_mes">
+
+
+	</form>
+<script>
+/* funcao Switch.*/
+
+        function verificames(){
+            var mes = parseInt(document.formcal.mes.value);
+            switch (mes) {
+                case 1:document.formcal.nome_mes.value = 'janeiro';
+                    break;
+                case 2:document.formcal.nome_mes.value = 'fevereiro';
+                    break;
+                case 3:document.formcal.nome_mes.value = 'marco';
+                    break;
+                case 4:document.formcal.nome_mes.value = 'abril';
+                    break;
+                case 5:document.formcal.nome_mes.value = 'maio';
+                    break;
+                case 6:document.formcal.nome_mes.value = 'junho';
+                    break;
+                case 7:document.formcal.nome_mes.value = 'jullho';
+                    break;
+                case 8:document.formcal.nome_mes.value = 'agosto';
+                    break;
+                case 9:document.formcal.nome_mes.value = 'setetembro';
+                    break;
+                case 10:document.formcal.nome_mes.value = 'oututbro';
+                    break;
+                case 11:document.formcal.nome_mes.value = 'novembro';
+                    break;
+                case 12:document.formcal.nome_mes.value = 'dezezembro';
+                    break;
+                default:
+                    break;
+					 }
+
+        }
+
+
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  js04_lowercase.html</title>
+</head>
+
+<html>
+ <h3>consulta curso </h3>
+ <p>
+ 
+  <body>
+   <form  name="formcurso" action="" method= "post">
+   Digite o Curso: <input type="text" name="fcursodig" siza="8" maxlength="4" /> (SIST) <p></p>
+    <input type="button" name="btn_validar" value="validar" onclick="cadcurso()">
+	<input type="button" name="btn_cancelar" value="cancelar" /><p></p>
+	Codigo do curso: < <input type="text" name="f_codcurso" size="15" maxlength="10" /><p></p>
+
+    </form>
+	
+    <script language="JavaScript">
+	/*Definicao de variaveis */
+	var js_cursodig;
+	/*funcao cadcurso*/
+        function cadcurso(){
+            js_cursodig=document.formcurso.f_cursodig.value;
+			if (js_cursodig.toUpperCase()=='SIST') {
+			document.formcurso.f_codcurso.value= 'SIST001/F8';
+			}
+            else{
+               window.alert('Curso invalido!');
+            }
+        }
+    </script>
+
+
+
+    </body>
+</html>

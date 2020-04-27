@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js04_dowhile.html</title>
+</head>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var resposta;
+            do {
+                var quantidade = parseFloat(window.prompt('informe a qtd de hras trabalhadas: (135 a 180)'));
+                var valorhtrab = parseFloat(window.prompt('informe o valor da hras trabalhada: (25 a 50)'));
+                var inss = parseFloat(window.prompt('percentual de desconto inss: (5 a 15) ?'))
+
+                var salbru = quantidade * valorhtrab;
+                var descts = (inss/100)*salbru;
+                var salli = salbru - descts;
+
+                if(quantidade > 180  || quantidade < 135){
+                    document.write('qtd de horas invalido');
+                }
+                if(valorhtrab> 50  || valorhtrab <25){
+                    document.write('valor de horas invalido');
+                }
+                if(inss > 15 || inss<5){
+                    document.write('porcentagem invalida');
+                }
+
+                document.write('salario bruto ' + salbru);
+                document.write('descontos ' + descts);
+                document.write('salario liquido ' + salli);
+                resposta = window.prompt('deseja continuar?')
+                
+            } while (resposta != 'sim');
+
+        </script>
+    </body>
+</html>
